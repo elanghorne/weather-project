@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ericlanghorne/GitHub/weather-project/weather-learning/test_cpr'
+relocations:     []
+...
