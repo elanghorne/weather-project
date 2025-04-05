@@ -16,7 +16,14 @@
 
 int main(){
     // const variable for api key
-    const std::string API_KEY{"45902dcd298fe88e99d338f704b34ddc"};      // how should i handle the api key if i'm pushing to a public repo?
+    const char* apiKey = std::getenv("OPENWEATHERMAP_API_KEY");
+    if (!apiKey){
+        std::cerr << "Error: OPENWEATHERMAP_API_KEY environment variable not set.\n";
+        return 1;
+    }
+    std::string API_KEY(apiKey);      
+  
+  
     // cincy latitude and longitude
     std::string lat{"39.1014537"};
     std::string lon{"-84.5124602"};
