@@ -2,6 +2,8 @@
 *.d
 .DS_Store
 .vscode/
+*.dSYM/
+
 # Compiled Object files
 *.slo
 *.lo
@@ -38,3 +40,4 @@ weather.env
 *.app
 weather
 testing
+test_cpr
