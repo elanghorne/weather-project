@@ -1,11 +1,13 @@
 # Prerequisites
 *.d
-
+.DS_Store
+.vscode/
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+
 
 # Precompiled Headers
 *.gch
@@ -26,7 +28,13 @@
 *.a
 *.lib
 
+# Environment variables
+*.env
+weather.env
+
 # Executables
 *.exe
 *.out
 *.app
+weather
+testing
